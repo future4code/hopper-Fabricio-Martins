@@ -141,9 +141,3 @@ soma3(item1,item2)
 //     Divisão: 10
 //     ```
     
-//     - 💡  Dica
-        
-//         <aside>
-//         ⭐ Lembre-se de converter a entrada do usuário para número antes de fazer os cálculos :)
-        
-//         </aside>
