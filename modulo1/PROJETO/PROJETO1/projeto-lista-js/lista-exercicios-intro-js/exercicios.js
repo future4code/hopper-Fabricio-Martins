@@ -142,27 +142,34 @@ let anoNacsimento = Number(prompt("qual ano voce nasceu ? "))
 let anoIndentidade = Number(prompt("Qual ano voce tirou carteira indentidade"))
 let idade = anoAtual - anoNacsimento
 let tempoCarteira = anoAtual - anoIndentidade
-let jovens = tempoCarteira>=5 && idade<=20
-let adultos = idade>20 && idade<=50 && tempoCarteira<=10
-let idosos = idade>50 && tempoCarteira>=15 
- 
+let jovens =  tempoCarteira>=5
+let adultos = tempoCarteira>=10
+let idosos =  tempoCarteira>=15
+let retorno=0
 
-return  jovens || adultos || idosos
+//não conseguir fazer exercicio sem utilizar  if 
+if ((idade<=20)) {retorno=jovens}else if((idade>20&&idade<=50)){retorno=adultos}else if((idade>50)){retorno=idosos}
 
+return  console.log(retorno)
 
 }
-console.log(checaRenovacaoRG())
+
 
 // EXERCÍCIO 14
 function checaAnoBissexto(ano) {
   // implemente sua lógica aqui
-
-
-
+  return (ano % 400 === 0) || (ano % 4 === 0 && ano % 100 != 0)
 }
-
 // EXERCÍCIO 15
 function checaValidadeInscricaoLabenu() {
   // implemente sua lógica aqui
-
+  let idade = prompt("Você tem mais de 18 anos")
+  let ensinoMedio = prompt("tem ensino médio completo?")
+  let disponibilidadeHorário = prompt("tem disponibilidade de horários?")
+  let idede1 = idade.includes("sim")
+  let ensinoMedio1 = ensinoMedio.includes("sim")
+  
+  let disponibilidadeHorário1 = disponibilidadeHorário.includes("sim")
+  let idadeEnsino = idede1 && ensinoMedio1
+  console.log(idadeEnsino && disponibilidadeHorário1)
 }
