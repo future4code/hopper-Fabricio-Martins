@@ -1,3 +1,30 @@
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> INTREPRETAÇÃO DE CODIGO <<<<<<<<<<<<<<<<<<<<<<<<<
+
+// 1 . ESTA SOMANDO VALOR DO INDICE NO VALOR DA VARIACVEL VAROL RESULTANDO NO NUMERO
+
+    // 15
+
+// 2 .  
+//A)
+        //19
+        // 21
+        // 23  
+        // 25
+        // 27  
+        // 30
+//B)
+ // NÃO
+
+//3)
+
+//   * 
+//   ** 
+//   *** 
+//   ****
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>---<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
 
 
 // // 1. Pergunte ao usuário quantos bichinhos de estimação ele tem e guarde esse dado em uma variável.
