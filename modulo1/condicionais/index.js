@@ -112,9 +112,9 @@
 
 
 
-const idade = Number(prompt("Qual sua idade:"))
+//const idade = Number(prompt("Qual sua idade:"))
 
-if (idade<18) {console.log(`Você é de maior pode dirigir`)} else {console.log("Você é menor de idade precisa crescer para dirigir")}
+//if (idade<18) {console.log(`Você é de maior pode dirigir`)} else {console.log("Você é menor de idade precisa crescer para dirigir")}
 
 
 // 2. Agora faça um programa que verifica que turno do dia um aluno estuda. Peça para digitar **M** (matutino) ou **V** (Vespertino) ou **N** (Noturno). Imprima no console a mensagem "Bom Dia!", "Boa Tarde!" ou "Boa Noite!". Utilize o bloco `if/else`
@@ -132,9 +132,9 @@ if (idade<18) {console.log(`Você é de maior pode dirigir`)} else {console.log(
 //         "Boa Tarde!"
 //         ```
 
-const turno = prompt("Digite **M** (matutino) ou **V** (Vespertino) ou **N** (Noturno):")
-        turno = turno.toLocaleUpperCase
-    if (turno === "M"){console.log("Bom dia")}else if(turno === "V"){console.log("Boa tarde")}else{console.log("Boa tarde")}
+//const turno = prompt("Digite **M** (matutino) ou **V** (Vespertino) ou **N** (Noturno):")
+ //       turno = turno.toLocaleUpperCase
+//    if (turno === "M"){console.log("Bom dia")}else if(turno === "V"){console.log("Boa tarde")}else{console.log("Boa tarde")}
 
 
 // 3. Repita o exercício anterior, mas utilizando a estrutura de `switch case` agora.
@@ -144,26 +144,34 @@ const turno = prompt("Digite **M** (matutino) ou **V** (Vespertino) ou **N** (No
 //         ⭐ Lembre-se que o switch case é como se fosse um if, mas ele verifica APENAS IGUALDADES ESTRITAS (`===`)
         
 //         </aside>
-        switch (turno){
-            case "M": console.log("Bom dia")
-            break
-            case "V": console.log("Boa Tarde")
-            break
-            case "N": console.log("Boa Noite")
-            break
-            default : console.log("Por favor digite conforme enunciado")
+//        switch (turno){
+ //           case "M": console.log("Bom dia")
+ //           break
+//            case "V": console.log("Boa Tarde")
+ //           break
+ ///           case "N": console.log("Boa Noite")
+ ///           break
+ //           default : console.log("Por favor digite conforme enunciado")
                
 
-        }
+//        }
 
 
     
 // 4. Considere a situação: você vai ao cinema com um amigo ou amiga, porém ele/ela só assistirá a um filme com você se ele for do gênero fantasia **e** se o ingresso está abaixo de 15 reais. Faça um código que pergunta ao usuário qual o gênero de filme que vão assistir e outra pergunta sobre o preço do ingresso, então verifique se seu amigo ou amiga vai topar assistir o filme. Caso positivo, imprima no console a mensagem: `"Bom filme!"`, caso contrário, imprima `"Escolha outro filme :("`
 
-const filme = {genero:"FANTASIA"} 
+//<<<<<<< projeto-blackjack
+//const filme = {genero:"FANTASIA"} 
+//=======
+// filme = {genero:"fantasia"} 
+//>>>>>>> master
 
-let generoDoFilme = prompt("Qual Genero do filme? :")
-let valorDoFilme = Number(prompt("Qual Valor do filme? :"))
-generoDoFilme = generoDoFilme.toLocaleUpperCase
+//let generoDoFilme = prompt("Qual Genero do filme? :")
+//let valorDoFilme = Number(prompt("Qual Valor do filme? :"))
+//generoDoFilme = generoDoFilme.toLocaleUpperCase
 
-if (generoDoFilme===filme.genero && valorDoFilme<=15){console.log("Bom Filme!")}else{console.log("Escolha outro Filme")}
+//<<<<<<< projeto-blackjack
+//if (generoDoFilme===filme.genero && valorDoFilme<=15){console.log("Bom Filme!")}else{console.log("Escolha outro Filme")}
+///=======
+//if (generoDoFilme==="FANTASIA" && valorDoFilme<=15){console.log("Bom Filme!")}else{console.log("Escolha outro Filme")}
+//>>>>>>> master
