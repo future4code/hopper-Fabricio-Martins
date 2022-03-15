@@ -1,0 +1,17 @@
+- **Exercícios de fixação do conhecimento**
+    
+    Faça um resumo sobre quais são os 7 passos fundamentais para a resolução de problemas e como eles podem nos ajudar a solucionar nossos desafios de programação.
+
+1). Interpretação de texto, entender problema.
+
+2). Apos entender sabemos temos que retiar informação que serão uteis para resolução do problema.
+
+3.) definir o que temos para resolver possiveis erros na entrada e qual resultado de saida desejado .
+
+4.) fazer um fluxograma do codigo.
+
+5.) criar codigo esboço, fazer a funcionalidade mais simples possivel para codigo.
+
+6.) colocar codigo na linguagem desejada.
+
+7.) incrementar o codigo diminuindo seu tamanho e aumentando sua eficiencia e enquadrar codigo as regras do cliente com uma saida final apos testes.
