@@ -96,40 +96,88 @@ return  objetoGeral
 
 // EXERCÍCIO 08
 function retornaNPrimeirosPares(n) {
- 
 
-
+let numerosPares = []
+let i = 0
+while (i<n) {
+    let pares = i*2
+    numerosPares.push(pares)
+    i++
+}
+return numerosPares
 
 }
 
 // EXERCÍCIO 09
 function classificaTriangulo(ladoA, ladoB, ladoC) {
-
+let resposta = ["Escaleno","Isósceles","Equilátero"]
+let retorno = 0
+if(ladoA===ladoB&&ladoB===ladoC){retorno=resposta[2]}else if(ladoA!==ladoB&&ladoB!==ladoC&&ladoA!==ladoC){retorno=resposta[0]}else{retorno=resposta[1]}
+    
+return retorno
 }
 
 // EXERCÍCIO 10
 function retornaSegundoMaiorESegundoMenor(array) {
-  
+    array.sort((a, b) => a - b);
+    let resultado=[];
+    
+    resultado.push(array[(array.length)-2]);
+    resultado.push(array[1]);
+
+    return resultado
 }
 
 // EXERCÍCIO 11
 function retornaChamadaDeFilme(filme) {
    
+
+
+    let retorno = `Venha assistir ao filme ${filme.nome}, de ${filme.ano}, dirigido por ${filme.diretor} e estrelado por ${ filme.atores}.`
+
+    return retorno
 }
 
 // EXERCÍCIO 12
 function retornaPessoaAnonimizada(pessoa) {
    
+let retorno = pessoa
+retorno.nome = "ANÔNIMO";
+
+return retorno
 }
 
 // EXERCÍCIO 13A
 function retornaPessoasAutorizadas(pessoas) {
-   
+    pessoasAutorizadas = []
+    pessoasNaoAutorizadas = []
+   for (let i = 0; i < pessoas.length; i++) {
+      if (pessoas[i].idade>14&&pessoas[i].idade<60&&pessoas[i].altura>1.5) {
+          
+           pessoasAutorizadas.push(pessoas[i])
+      }else{pessoasNaoAutorizadas.push(pessoas[i])}
+        
+   }
+
+
+    return pessoasAutorizadas
+
 }
 
 // EXERCÍCIO 13B
 function retornaPessoasNaoAutorizadas(pessoas) {
-  
+    pessoasAutorizadas = []
+    pessoasNaoAutorizadas = []
+   for (let i = 0; i < pessoas.length; i++) {
+      if (pessoas[i].idade>14&&pessoas[i].idade<60&&pessoas[i].altura>1.5) {
+          
+           pessoasAutorizadas.push(pessoas[i])
+      }else{pessoasNaoAutorizadas.push(pessoas[i])}
+        
+   }
+
+
+    return pessoasNaoAutorizadas
 }
 
 // EXERCÍCIO 14
@@ -140,6 +188,10 @@ function retornaContasComSaldoAtualizado(contas) {
 // EXERCÍCIO 15A
 function retornaArrayOrdenadoAlfabeticamente(consultas) {
   
+let resposta = [...consultas.nome.sort()]
+
+return resposta
+
 }
 
 // EXERCÍCIO 15B
