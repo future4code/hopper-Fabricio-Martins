@@ -162,8 +162,10 @@ const turno = prompt("Digite **M** (matutino) ou **V** (Vespertino) ou **N** (No
 
 const filme = {genero:"FANTASIA"} 
 
+
 let generoDoFilme = prompt("Qual Genero do filme? :")
 let valorDoFilme = Number(prompt("Qual Valor do filme? :"))
 generoDoFilme = generoDoFilme.toLocaleUpperCase
 
-if (generoDoFilme===filme.genero && valorDoFilme<=15){console.log("Bom Filme!")}else{console.log("Escolha outro Filme")}
+
+if (generoDoFilme==="FANTASIA" && valorDoFilme<=15){console.log("Bom Filme!")}else{console.log("Escolha outro Filme")}
