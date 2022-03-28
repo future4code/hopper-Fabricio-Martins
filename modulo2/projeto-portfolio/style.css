@@ -1,0 +1,173 @@
+
+body{
+
+padding: 0;
+text-decoration: none;
+background-color:  rgb(255, 255, 255);
+
+}
+
+
+.tab {
+   
+  border: 1px solid rgb(255, 255, 255);
+    background-color:white;
+    width: 100%;
+    margin-top: 0;
+    padding: 0;
+    display: inline-block;
+    position:sticky;
+}
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: 1px solid rgb(255, 255, 255);
+    text-align: center;
+ 
+    outline: none;
+    cursor: pointer;
+    padding:10px 30px;
+    transition: 1s;
+    width: 25%;
+    font-size: 120%;
+    color: rgb(94, 114, 170);
+  }
+  
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: rgb(163, 212, 240);
+  color:  white;
+    
+}
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color:   rgb(56, 182, 255);
+    border-radius: 0;
+    color:  white;
+   
+
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+   
+    margin-top: 3%;
+    
+    background-color: white;
+    display: block;
+    width: 100%;
+
+  }
+.ficha{
+    height: 300px;
+    text-align: center;
+    background-color:   rgb(56, 182, 255);
+}
+.img1{
+
+position: relative;
+ 
+   align-content: center;
+}
+
+.fotoPerfil{
+  display: inline-block;
+  width: 35%;
+  
+  padding: 0;
+ border: 1px solid white;
+  margin-left: 0%;
+ 
+  background-color:   rgb(56, 182, 255);
+}
+
+.PaginaIncial{
+  display: block;
+  
+  
+}
+.Perfil{
+  display: inline-block;
+  width: 30%;
+
+  text-align: left;
+  padding: 0;
+  
+}
+
+.divtabela{
+  width: 100%;
+  display: inline-block;
+  
+  line-height: center;
+}
+.nomePerfil{
+  display: inline-block;
+  margin: 0;
+  font-size:1.8rem;
+  text-align: center;
+  width: 100%;
+
+}
+.divperfil{
+  text-align: center;
+
+  width: 100%;
+ 
+}
+
+
+.tabela{
+  display: inline-block;
+  
+  width: 100%;
+  text-align: right;
+  margin-left: 0%;
+  
+
+}
+.textoHistoria{
+  margin-left: 0;
+  width: 80%;
+  font-size: medium;
+  
+}
+.icon{
+  width: 100px;
+  border-radius: 100%;
+ padding: 5px;
+  display: inline-block;
+  
+
+}
+.divIcon{
+  text-align: center;
+  width: 30%;
+ 
+}
+.td{
+  
+ 
+  text-decoration: none;
+}
+.tdicon{
+  width: 15%;
+  text-decoration: none;
+}
+.tdhistoria{
+  width: 65%;
+  text-decoration: none;
+}
+.coluna1{
+  width: 30%;
+}
+.coluna2{
+  width: 40%;
+}
+.coluna3{
+  width: 20%;
+}
