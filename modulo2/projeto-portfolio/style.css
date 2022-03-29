@@ -171,3 +171,13 @@ position: relative;
 .coluna3{
   width: 20%;
 }
+
+.centro{text-align: center;
+display: block;
+
+}
+.container{
+width: 70%;
+border: double black;
+text-align: center;
+}
