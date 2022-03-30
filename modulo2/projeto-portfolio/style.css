@@ -137,19 +137,17 @@ display: block;
 
 }
 .container{
-width: 63%;
-box-shadow: 10px 5px 5px rgb(117, 115, 115);
+width: 50%;
+box-shadow: 10px 5px 5px rgb(39, 164, 236);
 text-align: center;
 display: inline-block;
 margin-bottom: 3rem;
 background-color: white;
+
 }
-.container :hover{
- 
-  box-shadow: 10px 5px 5px rgb(25, 189, 253);
+.container-img :hover{
 
- 
+  background-color: rgb(39, 164, 236);
 
-
-  }
+}
   
