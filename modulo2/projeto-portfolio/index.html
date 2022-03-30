@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,173 +15,109 @@
 <div class="ficha"><img class="img1" src="./imagen/Fabricio Silva.gif" alt=""></div>
 
             <div class="tab">
-                <button class="tablinks" onclick="openPage(event, 'PaginaInicial')" id="defaultOpen">Minha Vida</button>
+                <button class="tablinks" onclick="openPage(event, 'PaginaInicial')" id="defaultOpen">Formação</button>
                 <button class="tablinks" onclick="openPage( event,'FrontEnd')">Front-End</button>
                 <button class="tablinks" onclick="openPage( event,'SistemaInformacao')">Sistema Informação</button>
                 <button class="tablinks" onclick="openPage( event,'Contatos')">Contatos</button>
             </div>
 
-      <div id="PaginaInicial" class="PaginaInicial tabcontent centro">
-          <div class="container">
+      <div id="PaginaInicial" class="PaginaInicial tabcontent">
+        <div class="container">
+          <img class="icon" src="./imagen/Labenu.png" onclick="document.getElementById('id01').style.display='block'"alt="">
+          <p>Tendo certeza do profissional	que desejo me tornar, ingressei no Curso de Desenvolvedor FullStack da Labenu.</p>
+
+          <div id="id01" class="w3-modal">
+            <div class="w3-modal-content">
+              <div class="w3-container">
+                  <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                  <p>Some text. Some text. Some text.</p>
+                  <p>Some text. Some text. Some text.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="container">
+          <img class="icon" src="./imagen/estacio.png" alt="">
+          <p>Em 2020 inciei minha Graduação em Sistema de Informação na Universidade Estacio de Sá - Ja com um objetvo de migrar da area de manuntenção para tecnologia.
+        </p>
+        </div>
+        <div class="container">
+          <img class="icon" src="./imagen/etpc.png" alt="">
+          <p>Em 2018 após anos retomei estudos afim de melhora profissional e fiz um curso Técnico em Mecânica.
+        </p>
+        </div>
+        <div class="container">
+          <img class="icon" src="./imagen/exercito-brasileiro-logo.png" alt="" srcset="">
+          <p>Em 2004 ao completar 18 anos, fui convocado para exercito Brasileiro, Onde tive oportunidade de trabalha na seção 4, obtive grande evolução com Excel e as ferramentas Office, praticamente foi um curso técnico de administração só que na pratica.</p>
+        </div>
+        <div class="container">
+          <img class="icon" src="./imagen/CURSOS.png" alt="" srcset="">
+          <p> Ensino Medio e Ensino fundamental todos horários livres fiz cursos extracurriculares nos periodo noturno e fim de semana.
+        </p>
+        <table class="tabela td">
+          <th class="coluna1">Descrição</th>
+          <th class="coluna2">Local</th>
+          <th class="coluna3">Periodo</th>
+          <tr class="trCursos">
+            <td>Inglês - Intermediario</td>
+            <td>SCHEME LANGUAGES - 320 HRS</td>
+            <td>2000 à 2003</td>
+          </tr>
+          <tr>
+            <td>Espanhol - Intermediario</td>
+            <td>Curso Arriba de Espanhol - 308 hrs</td>
+            <td>2001 à 2003</td>
+          </tr>
+          <tr>
+            <td>Html e Navegação</td>
+            <td>Faetec - 24hrs</td>
+            <td>2001</td>
+          </tr>
+          <tr>
+            <td>MicroSoft WINDOWS 98</td>
+            <td>MicroSoft Certified Solution Provider - 56hrs</td>
+            <td>1999</td>
+          </tr>
+          
+          <tr>
+            <td>Montagem e Manuntenção</td>
+            <td>MicroSoft Certified Solution Provider - 56hrs</td>
+            <td>2000</td>
+          </tr>
+          
+          <tr>
+            <td>MicroSoft Excel 97</td>
+            <td>MicroSoft Certified Solution Provider - 56hrs</td>
+            <td>2000</td>
+          </tr>
+        </table>
+        
+        </div>
+        
+        
+        
+        <div class="container">
+            <a href="https://crescacomgarra.com.br/"><img class="icon"src="./imagen/LOGO.png" alt=""><p>Colégio Garra</p></a>
+           <p> No Colégio Garra Vestibulares, Cursei ensino médio com muita dedicação pois se tratava de um curso preparatorio para Vestibulares conjunto com Ensino Médio com 9hrs diarios de aulas.</p>
+
+        </div>
+        
+        
+        <div class="container">
               <img src="./imagen/volta redonda.jpg"  class="icon" ><p> <a href="https://www.voltaredonda.rj.gov.br/">Volta Redonda - RJ</a></p>
               <p> Nasci no dia 4 Julho de 1985 na cidade de Volta Redonda - Rj, Famosa como Cidade do Aço por ser sede da maior Siderúgica da América Latina a CSN, Fundada pelo Presidente Getulio Vargas.
               </p>
-          </div>
-        
-        
-        
-        <!-- <div class="Perfil">
-                  <div class="divperfil">
-                  <img  class="fotoPerfil" src="./imagen/fabricio programdor copiar.png" alt="" srcset="">
-                  </div>
-                <div class="nomePerfil">
-                    <p>Fabricio Silva</p>
-                    <p>36 anos</p>
-                </div>
-                
-
-
-          </div> -->
-
-          <!-- <div class="divtabela">
-            <table class="tabela">
-              <tr class="divIcon">
-                <td class="td tdicon">
-                
-                <img src="./imagen/volta redonda.jpg"  class="icon" ><p> <a href="https://www.voltaredonda.rj.gov.br/">Volta Redonda - RJ</a></p>
-                </td>
-
-                <td class="textoHistoria td tdhistoria">
-                  <p> Nasci no dia 4 Julho de 1985 na cidade de Volta Redonda - Rj, Famosa como Cidade do Aço por ser sede da maior Siderúgica da América Latina a CSN, Fundada pelo Presidente Getulio Vargas.
-                  </p>
-                  
-                  <p>
+              <p>
                 Sempre tive facilidade de aprendizado, estudei o ensino fundamental na Escola Municipal Maria José dos Campos Costa.
                 </p>
-                </td>
-                <td class="td">
-                  Periodo 1993 à 2000  
-
-                </td>
-              </tr>
-              <br>
-              <tr class="divIcon">
-                <td class="td tdicon"><a href="https://crescacomgarra.com.br/"><img class="icon"src="./imagen/LOGO.png" alt=""><p>Colégio Garra</p></a></td>
-                <td class="textoHistoria td tdhistoria">
-                  No Colégio Garra Vestibulares, Cursei ensino médio com muita dedicação pois se tratava de um curso preparatorio para Vestibulares conjunto com Ensino Médio com 9hrs diarios de aulas.
-                </td>
-                <td class="td">Periodo 2000 à 2003  </td>
-              </tr>
-              <tr class="divIcon">
-                <td class="td tdicon"><img class="icon" src="./imagen/CURSOS.png" alt="" srcset=""></td>
-                <td class="textoHistoria td tdhistoria">
-                  <p>Durante Ensino Medio e Ensino fundamental todos horários livres fiz cursos extracurriculares nos periodo noturno e fim de semana</p>
-                  <table class="tabela td">
-                    <th class="coluna1">Descrição</th>
-                    <th class="coluna2">Local</th>
-                    <th class="coluna3">Periodo</th>
-                    <tr class="trCursos">
-                      <td>Inglês - Intermediario</td>
-                      <td>SCHEME LANGUAGES - 320 HRS</td>
-                      <td>2000 à 2003</td>
-                    </tr>
-                    <tr>
-                      <td>Espanhol - Intermediario</td>
-                      <td>Curso Arriba de Espanhol - 308 hrs</td>
-                      <td>2001 à 2003</td>
-                    </tr>
-                    <tr>
-                      <td>Html e Navegação</td>
-                      <td>Faetec - 24hrs</td>
-                      <td>2001</td>
-                    </tr>
-                    <tr>
-                      <td>MicroSoft WINDOWS 98</td>
-                      <td>MicroSoft Certified Solution Provider - 56hrs</td>
-                      <td>1999</td>
-                    </tr>
-                    
-                    <tr>
-                      <td>Montagem e Manuntenção</td>
-                      <td>MicroSoft Certified Solution Provider - 56hrs</td>
-                      <td>2000</td>
-                    </tr>
-                    
-                    <tr>
-                      <td>MicroSoft Excel 97</td>
-                      <td>MicroSoft Certified Solution Provider - 56hrs</td>
-                      <td>2000</td>
-                    </tr>
-                  </table>
-                  <td class="td">Periodo de 1999 à 2003</td>
-                </td>
-              </tr>
-              
-              <tr class="divIcon">
-                <td class="td tdicon"><img class="icon" src="./imagen/exercito-brasileiro-logo.png" alt="" srcset=""></td>
-                <td class="textoHistoria td tdhistoria"> Em 2004 ao completar 18 anos, fui convocado para exercito Brasileiro, Onde tive oportunidade de trabalha na seção 4, obtive grande evolução com Excel e as ferramentas Office, praticamente foi um curso técnico de administração só que na pratica.</td>
-                <td class="td">Periodo de 2004 à 2006</td>
-              </tr>
-              <tr class="divIcon">
-                <td class="td tdicon"><img class="icon" src="./imagen/etpc.png" alt=""></td>
-                <td class="textoHistoria td tdhistoria">Em 2018 após anos retomei estudos afim de melhora profissional e fiz um curso Técnico em Mecânica.</td>
-                <td class="td">Periodo de 2018 à 2020</td>
-              </tr>
-              <tr class="divIcon">
-                <td class="td tdicon"><img class="icon" src="./imagen/estacio.png" alt=""></td>
-                <td class="textoHistoria td tdhistoria">Em 2020 inciei minha Graduação em Sistema de Informação na Universidade Estacio de Sá - Ja com um objetvo de migrar da area de manuntenção para tecnologia.</td>
-                <td class="td">Periodo de 2020 à 2024</td>
-              </tr>
-              <tr class="divIcon">
-                <td class="td tdicon"><img class="icon" src="./imagen/Labenu.png" alt=""></td>
-                <td class="textoHistoria td tdhistoria">Tendo certeza da profissional	que desejo me tornar, ingressei no Curso de Desenvolvedor FullStack da Labenu.</td>
-                <td class="td">Periodo de 2022 à 2023</td>
-              </tr>
-
-            </table>
-          </div> -->
-       
-        </div>
-
-        <div id="FrontEnd" class="tabcontent">
-            <h3>Desenvolvedor Front-End</h3>
-            <p>labenu</p>
-        </div>
-
-        <div id="SistemaInformacao" class="tabcontent">
-            <h3>Graduação em Sitema de Informação</h3>
-            <p>Universidade Estacio de Sá</p>
-        </div>
-        <div id="Contatos" class="tabcontent">
-          <h3>Graduação em Sitema de Informação</h3>
-          <p>Universidade Estacio de Sá</p>
-        </div>
-
-
-    <!-- <div class="historia"> -->
-      <!-- <div class="divIcon">
-        <img src="./imagen/volta redonda.jpg"  class="icon" >
-      </div> -->
-      <!-- <div class="textoHistoria">
-      <p> Nasci no dia 4 Julho de 1985 na cidade de Volta Redonda - Rj, Famosa por ser sede da maior Siderúgica da América Latina a CSN.
-        </p>
-        <p>
-      Sempre tive facilidade de aprendizado, estudei o ensino fundamental na Escola Municipal Maria José dos Campos Costa.
-      </p>
-      </div>
-      <br>
-      <div class="divIcon">
-        <img src="./imagen/LOGO.png"  class="icon" >
-      </div>
-      <div class="textoHistoria">
-      <p>Realizei meu Ensino Médio no Colégio Garra Vestibulares, onde aprendir valores e tecnicas de estudo imenssuraveis no qual utilizo até hoje mantendo uma rotina de estudo de acordo com minha agenda de forma constante.
-        </p>
-        
-      </div> -->
+              <p>1993 à 2000</p>
+          </div>
+         
+ 
     
-    
-   
-      <!-- <div>
+<!--    
+      <div>
 
         <h2>W3.CSS Modal</h2>
         <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Open Modal</button>
