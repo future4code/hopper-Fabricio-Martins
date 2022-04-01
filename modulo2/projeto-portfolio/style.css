@@ -1,153 +1,53 @@
-
-body{
-
-padding: 0;
-text-decoration: none;
-background-color:rgb(56, 182, 255);
-
-}
-
-
-.tab {
-   
-  border: 1px solid rgb(255, 255, 255);
-    background-color:white;
-    width: 100%;
-    margin-top: 0;
-    padding: 0;
-    display: inline-block;
-    position:sticky;
-}
-  
-  /* Style the buttons inside the tab */
-  .tab button {
-    background-color: inherit;
-    float: left;
-    border: 1px solid rgb(255, 255, 255);
-    text-align: center;
- 
-    outline: none;
-    cursor: pointer;
-    padding:10px 30px;
-    transition: 1s;
-    width: 25%;
-    font-size: 120%;
-    color: rgb(94, 114, 170);
-  }
-  
-  
-  /* Change background color of buttons on hover */
-  .tab button:hover {
-    background-color: rgb(163, 212, 240);
-  color:  white;
-    
-}
-  
-  /* Create an active/current tablink class */
-  .tab button.active {
-    background-color:   rgb(56, 182, 255);
-    border-radius: 0;
-    color:  white;
-   
-
-  }
-  
-  /* Style the tab content */
-  .tabcontent {
-   
-    margin-top: 3%;
-    background-color:rgb(56, 182, 255);
-    display: block;
-    width: 100%;
-    text-align: center;
-
-  }
-.ficha{
-    height: 300px;
-    text-align: center;
-    background-color:   rgb(56, 182, 255);
-}
-.img1{
-
-position: relative;
- 
-   align-content: center;
-}
-
-.fotoPerfil{
-  display: inline-block;
-  width: 35%;
-  
+*{
   padding: 0;
- border: 1px solid white;
-  margin-left: 0%;
- 
-  background-color:   rgb(56, 182, 255);
+  margin: 0;
+  text-decoration: none;
+  background-color:rgb(76, 179, 255)
 }
 
-.PaginaIncial{
-  text-align: center;
-  display: block;
-  background-color: rgb(163, 212, 240);
+.outdoor{
+  display: flex;
+  justify-content: center;
+}
+.container_menu{
+  display: grid;
+  grid-auto-rows: auto;
+  grid-template-columns:2fr 2fr 2fr 2fr;
+  height: 80px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
+}
+.botoes_Do_Menu{
+background-color: rgb(255, 255, 255);
+border: rgb(24, 20, 20);
+box-shadow: 3px 3px 3px rgb(94, 91, 91);
+color: rgb(8, 64, 150);
+font-size: 20pt;
+text-shadow: 2px 2px 2px rgb(136, 137, 138);
+}
+.botoes_Do_Menu:hover{
+  color: rgb(25, 198, 241);
+  font-size: x-large;
+}
+.botoes_Do_Menu:active{
+  background-color:rgb(76, 179, 255);
+  border: double ;
+  color: aliceblue;
+}
+.PaginaInicial{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container-img{
+  display: flex;
   
 }
-.Perfil{
-  display: inline-block;
-  width: 30%;
-
-  text-align: left;
-  padding: 0;
-  
-}
-
-
-
-
-
-
-
 .icon{
   width: 100px;
-  border-radius: 100%;
- padding: 5px;
-  display: inline-block;
+  border-radius: 50%;
+}
+.container-flex{
   
-
+  border: black double;
 }
-.divIcon{
-  text-align: center;
-  width: 30%;
- 
-}
-
-
-.coluna1{
-  text-align: center;
-  width: 10%;
-}
-.coluna2{
-  width: 10%;
-}
-.coluna3{
-  width: 10%;
-}
-
-.centro{text-align: center;
-display: block;
-
-}
-.container{
-width: 50%;
-box-shadow: 10px 5px 5px rgb(39, 164, 236);
-text-align: center;
-display: inline-block;
-margin-bottom: 3rem;
-background-color: white;
-
-}
-.container-img :hover{
-
-  background-color: rgb(39, 164, 236);
-
-}
-  
