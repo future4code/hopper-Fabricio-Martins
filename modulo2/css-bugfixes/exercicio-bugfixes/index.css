@@ -21,6 +21,7 @@ input {
     height: 20px;
     width: 500px;
     border: none;
+    
 }
 
 button:focus {
@@ -35,8 +36,10 @@ img {
 
 
 div img {
-    background: rgb(252, 252, 252);
+    
     width: 1.5rem;
+    color: rgb(31, 29, 29);
+    background-color: rgb(255, 255, 255);
    
 }
 
