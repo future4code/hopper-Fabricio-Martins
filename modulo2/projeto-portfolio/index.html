@@ -1,83 +1,111 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Fabricio Silva</title>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  </head>
-    <body>
-      <div class="outdoor">
-        <img src="./imagen/Fabricio Silva.gif" alt="gif com minhas fotos">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+
+  <title>Fabricio Silva</title>
+
+</head>
+
+<body>
+  <!--incio modal da labenu -->
+  <div id="id01" class="modal modal-hide">
+    <div class="modal-content">
+      <div class="display_container">
+        <button class="container-close" onclick="fecharModal('id01')">Sair</button>
+        <img class="icon" src="./imagen/Labenu.png" alt="">
+
+        <p class="text_icon">Tendo certeza do profissional que desejo me tornar, ingressei no Curso de Desenvolvedor
+          FullStack da Labenu.
+        </p>
+        <br>
+        <br>
+        <p class="text_icon">Conteudo adquirido até momento:</p>
+        <br>
+        <div class="list_materias">
+          <p class="text_list">• Git</p>
+          <p class="text_list">• Projeto de Fixação - Readme no VSCode</p>
+          <p class="text_list">• Variáveis</p>
+          <p class="text_list">• Operadores e Lógica de Programação</p>
+          <p class="text_list">• Strings e Arrays </p>
+          <p class="text_list">• Funções</p>
+          <p class="text_list">• Objetos</p>
+          <p class="text_list">• Condicionais</p>
+          <p class="text_list">• Laços</p>
+          <p class="text_list">• Callback e Funções de Array</p>
+          <p class="text_list">• Resolvendo Problemas</p>
+          <p class="text_list">• Revisão de Javascript</p>
+          <p class="text_list">• HTML: Elementos e Atributos</p>
+          <p class="text_list">• CSS (Parte 1)</p>
+          <p class="text_list">• CSS (Parte 2) e Dev Tools</p>
+        </div>
       </div>
-      <div class="container_menu">
-        <button class="botoes_Do_Menu" onclick="openPage(event, 'PaginaInicial')" id="defaultOpen">Formação Educacional</button>
-        <button class="botoes_Do_Menu" onclick="openPage( event,'FrontEnd')">Front-End</button>
-        <button class="botoes_Do_Menu" onclick="openPage( event,'SistemaInformacao')">Sistema Informação</button>
-        <button class="botoes_Do_Menu" onclick="openPage( event,'Contatos')">Contatos</button>
+    </div>
+  </div>
+
+  <!--fim modal da labenu -->
+  <!--incio modal da estacio -->
+  <div id="id02" class="modal modal-hide">
+    <div class="modal-content">
+      <div class="display_container">
+        <button class="container-close" onclick="fecharModal('id02')">Sair</button>
+        <img class="icon" src="./imagen/estacio.png" alt="">
+        <div class="text_icon">UNIVERSIDADE ESTACIO DE SÁ</div>
+        <p class="text_icon">SISTEMA DE INFORMÇÃO</p>
+        <h4 class="text_icon">GRADUAÇÃO </h4>
+
+        <!--colocar aqui coisas sobre estacio -->
+
+
       </div>
+    </div>
+  </div>
+  <!--incio outdoor inicio -->
+  <div id="id03" class="modal modal-hide">
+    <div class="modal-content">
+      <div class="display_container">
+        <button class="container-close" onclick="fecharModal('id03')">Sair</button>
 
-      <div id="PaginaInicial" class="PaginaInicial">
-        
-          <div class="container-flex">
-            
-            <div class="container-img">
-            <img class="icon" src="./imagen/Labenu.png" onclick="document.getElementById('id01').style.display='block'"alt="">
-            </div>
-            <p>Tendo certeza do profissional	que desejo me tornar, ingressei no Curso de Desenvolvedor FullStack da Labenu.</p>
+        <img class="icon" src="./imagen/etpc.png" alt="">
+        <h4 class="text_icon">Escola Técnica Pandia Calogeras</h4>
+        <p class="text_icon">Técnico em Mecânica</p>
 
-            <div id="id01" class="w3-modal">
-              <div class="w3-modal-content">
-                <div class="w3-container" style="text-align: center;">
-                    <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-                      <p><b>Conteudo adquirido até momento:</b></p>
+        <!--colocar aqui coisas sobre estacio -->
 
-                      <p>•	Git</p>
-                      <p>•	Projeto de Fixação - Readme no VSCode</p>
-                      <p>•	Variáveis</p>
-                      <p>•	Operadores e Lógica de Programação</p>
-                      <p>•	Strings e Arrays </p>
-                      <p>•	Funções</p>
-                      <p>•	Objetos</p>
-                      <p>•	Condicionais</p>
-                      <p>•	Laços</p>
-                      <p>•	Callback e Funções de Array</p>
-                      <p>•	 Resolvendo Problemas</p>
-                      <p>•	 Revisão de Javascript</p>
-                      <p>•	 HTML: Elementos e Atributos</p>
-                      <p>•	CSS (Parte 1)</p>
-                      <p>•	CSS (Parte 2) e Dev Tools</p>
-                    
-                </div>
-              </div>
-            </div>
-         
-           </div>
-        
-        <div class="container-flex">
-          <img class="icon" src="./imagen/estacio.png" alt="">
-          <p>Em 2020 inciei minha Graduação em Sistema de Informação na Universidade Estacio de Sá - Ja com um objetvo de migrar da area de manuntenção para tecnologia.
-        </p>
+
+      </div>
+    </div>
+  </div>
+  <div id="id04" class="modal modal-hide">
+    <div class="modal-content">
+      <div class="display_container">
+        <button class="container-close" onclick="fecharModal('id04')">Sair</button>
+        <img class="icon" src="./imagen/mistica.jpg" alt="" srcset="">
+        <h4 class="text_icon">EXERCITO BRASILEIRO</h4>
+        <p class="text_icon">ACADEMIA MILITAR DAS AGULHAS NEGRAS</p>
+
+        <div>
+          <!--colocar aqui coisas sobre estacio -->
         </div>
-        <div class="container-flex">
-          <img class="icon" src="./imagen/etpc.png" alt="">
-          <p>Em 2018 após anos retomei estudos afim de melhora profissional e fiz um curso Técnico em Mecânica.
-        </p>
-        </div>
-        <div class="container-flex">
-          <img class="icon" src="./imagen/exercito-brasileiro-logo.png" alt="" srcset="">
-          <p>Em 2004 ao completar 18 anos, fui convocado para exercito Brasileiro, Onde tive oportunidade de trabalha na seção 4, obtive grande evolução com Excel e as ferramentas Office, praticamente foi um curso técnico de administração só que na pratica.</p>
-        </div>
-        <div class="container-flex">
-          <img class="icon" src="./imagen/CURSOS.png" alt="" srcset="">
-          <p> Ensino Medio e Ensino fundamental todos horários livres fiz cursos extracurriculares nos periodo noturno e fim de semana.
-        </p>
+
+      </div>
+    </div>
+  </div>
+  <div id="id05" class="modal modal-hide">
+    <div class="modal-content">
+      <div class="display_container">
+        <button class="container-close" onclick="fecharModal('id05')">Sair</button>
+        <img class="icon" onclick="abrirModal('id05')" src="./imagen/CURSOS.png" alt="" srcset="">
+        <p class="text_icon">Cursos Realizados: 1999 à 2004 </p>
+        <p></p>
         <table class="tabela td ">
           <th class="coluna1">Descrição</th>
           <th class="coluna2">Local</th>
-          <th class="coluna3">Periodo</th>
+          <th class="coluna3">Periodo:</th>
           <tr class="trCursos">
             <td>Inglês - Intermediario</td>
             <td>SCHEME LANGUAGES - 320 HRS</td>
@@ -98,82 +126,144 @@
             <td>MicroSoft Certified Solution Provider - 56hrs</td>
             <td>1999</td>
           </tr>
-          
+
           <tr>
             <td>Montagem e Manuntenção</td>
             <td>MicroSoft Certified Solution Provider - 56hrs</td>
             <td>2000</td>
           </tr>
-          
+
           <tr>
             <td>MicroSoft Excel 97</td>
             <td>MicroSoft Certified Solution Provider - 56hrs</td>
             <td>2000</td>
           </tr>
         </table>
-        
-        </div>
-        
-        
-        
-        <div class="container-flex">
-            <a href="https://crescacomgarra.com.br/"><img class="icon"src="./imagen/LOGO.png" alt=""><p>Colégio Garra</p></a>
-           <p> No Colégio Garra Vestibulares, Cursei ensino médio com muita dedicação pois se tratava de um curso preparatorio para Vestibulares conjunto com Ensino Médio com 9hrs diarios de aulas.</p>
 
-        </div>
-        
-        
-        <div class="container-flex">
-              <img src="./imagen/volta redonda.jpg"  class="icon" ><p> <a href="https://www.voltaredonda.rj.gov.br/">Volta Redonda - RJ</a></p>
-              <p> Nasci no dia 4 Julho de 1985 na cidade de Volta Redonda - Rj, Famosa como Cidade do Aço por ser sede da maior Siderúgica da América Latina a CSN, Fundada pelo Presidente Getulio Vargas.
-              </p>
-              <p>
-                Sempre tive facilidade de aprendizado, estudei o ensino fundamental na Escola Municipal Maria José dos Campos Costa.
-                </p>
-              <p>1993 à 2000</p>
-          </div>
-         
- 
-    
-<!--    
+      </div>
+
       <div>
+        <!--colocar aqui coisas sobre estacio -->
+      </div>
 
-        <h2>W3.CSS Modal</h2>
-        <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Open Modal</button>
-      
-                        <div id="id01" class="w3-modal">
-                          <div class="w3-modal-content">
-                            <div class="w3-container">
-                              <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-                              <p>Some text. Some text. Some text.</p>
-                              <p>Some text. Some text. Some text.</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-        </div> -->
-  
-      
+    </div>
+  </div>
+  </div>
+  <div id="id06" class="modal modal-hide">
+    <div class="modal-content">
+      <div class="display_container">
+        <button class="container-close" onclick="fecharModal('id06')">Sair</button>
+        <img class="icon" onclick="abrirModal('id06')" src="./imagen/LOGO.png" alt="">
+        <h4 class="text_icon">Colégio Garra</h4>
+        <h4 class="text_icon">Ensino Médio e Pré Vestibular</h4>
+        <div>
+          <p> No Colégio Garra Vestibulares, Cursei ensino médio com muita dedicação pois se tratava de um curso
+            preparatorio para Vestibulares conjunto com Ensino Médio com 9hrs diarios de aulas.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="outdoor">
+    <img src="./imagen/Fabricio Silva.gif" alt="gif com minhas fotos">
+  </div>
+  <!--fim outdoor inicio -->
+  <!-- inicio do menu -->
+  <div class="container_menu">
+    <a class="botoes_Do_Menu" href="./index.html">Formação Educacional</a>
+    <a class="botoes_Do_Menu" href="./Quemsoueu.html">Quem Sou Eu?</a>
+    <a class="botoes_Do_Menu" href="./experiencia.html">Experiência</a>
+    <a class="botoes_Do_Menu" href="./contatos.html">Contatos</a>
+  </div>
+  <!-- fim do menu -->
+  <!--inicio da pagina da escolas-->
+  <div class="PaginaInicial">
+
+    <div class="container-flex">
+
+      <div class="container-btn-flex">
+        <img class="icon" onclick="abrirModal('id01')" src="./imagen/Labenu.png" alt="">
+
+        <h4 class="text_icon">LABENU</h4>
+        <p class="text_icon">CURSO DESENVOLVIMENTO WEB</p>
+        <h4 class="text_icon">FullStack</h4>
+      </div>
 
 
+    </div>
 
-              <script>
-              function openPage(evt, cityName) {
-                var i, tabcontent, botoesDoMenu;
-                tabcontent = document.getElementsByClassName("tabcontent");
-                for (i = 0; i < tabcontent.length; i++) {
-                  tabcontent[i].style.display = "none";
-                }
-                botoesDoMenu = document.getElementsByClassName("botoesDoMenu");
-                for (i = 0; i < botoesDoMenu.length; i++) {
-                  botoesDoMenu[i].className = botoesDoMenu[i].className.replace(" active", "");
-                }
-                document.getElementById(cityName).style.display = "block";
-                evt.currentTarget.className += " active";
-              }
-              </script>
-                
-  </body>
- 
+    <div class="container-flex">
+      <div class="container-btn-flex">
+        <img class="icon" onclick="abrirModal('id02')" src="./imagen/estacio.png" alt="">
+        <div class="text_icon">UNIVERSIDADE ESTACIO DE SÁ</div>
+        <p class="text_icon">SISTEMA DE INFORMÇÃO</p>
+        <h4 class="text_icon">GRADUAÇÃO </h4>
+
+
+      </div>
+
+    </div>
+    <div class="container-flex">
+      <div class="container-btn-flex">
+        <img class="icon" onclick="abrirModal('id03')" src="./imagen/etpc.png" alt="">
+        <h4 class="text_icon">Escola Técnica Pandia Calogeras</h4>
+        <p class="text_icon">Técnico em Mecânica</p>
+        <h4 class="text_icon">Senior</h4>
+      </div>
+    </div>
+
+
+    <div class="container-flex">
+
+      <div class="container-btn-flex">
+
+        <img class="icon" onclick="abrirModal('id04')" src="./imagen/mistica.jpg" alt="" srcset="">
+        <h4 class="text_icon">EXERCITO BRASILEIRO</h4>
+        <p class="text_icon">ACADEMIA MILITAR DAS AGULHAS NEGRAS</p>
+        <h4 class="text_icon">SOLDADO DE MONTANHA</h4>
+
+      </div>
+
+    </div>
+
+    <div class="container-flex">
+
+      <div class="container-btn-flex">
+
+        <img class="icon" onclick="abrirModal('id05')" src="./imagen/CURSOS.png" alt="" srcset="">
+        <h4 class="text_icon">Cursos Realizados:</h4>
+        <h4 class="text_icon">Periodo: 1999 à 2004 </h4>
+
+
+      </div>
+    </div>
+    <div class="container-flex">
+      <div class="container-btn-flex">
+        <img class="icon" onclick="abrirModal('id06')" src="./imagen/LOGO.png" alt="">
+        <h4 class="text_icon">Colégio Garra</h4>
+        <h4 class="text_icon">Ensino Médio e Pré Vestibular</h4>
+
+      </div>
+    </div>
+
+
+    <!--fim da pagina da escolas-->
+    <!-- inicio do java script de controle do container close responsavel por fechar display -->
+    <script>
+      function fecharModal(id) {
+        let modal = document.getElementById(id);
+
+        modal.classList.add("modal-hide");
+      }
+      function abrirModal(id) {
+        let modal = document.getElementById(id);
+        modal.classList.remove("modal-hide");
+      }
+
+    </script>
+    <!-- inicio do java script de controle do container close responsavel por fechar display -->
+  </div>
+</body>
+
 
 </html>

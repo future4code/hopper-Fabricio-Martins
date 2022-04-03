@@ -16,6 +16,8 @@
   height: 80px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: larger;
+ align-self: center;
+
 }
 .botoes_Do_Menu{
 background-color: rgb(255, 255, 255);
@@ -24,30 +26,208 @@ box-shadow: 3px 3px 3px rgb(94, 91, 91);
 color: rgb(8, 64, 150);
 font-size: 20pt;
 text-shadow: 2px 2px 2px rgb(136, 137, 138);
+text-align: center;
+padding-top: 20px;
+
 }
 .botoes_Do_Menu:hover{
   color: rgb(25, 198, 241);
   font-size: x-large;
+  border-bottom: 3px solid;
+  border-image:linear-gradient(90deg,rgb(63, 4, 226),rgb(0, 225, 255),rgb(11, 75, 250) 100% )1;
 }
 .botoes_Do_Menu:active{
-  background-color:rgb(76, 179, 255);
-  border: double ;
-  color: aliceblue;
+  background-color:rgb(255, 255, 255);
+  border: double  black;
+  color: rgb(3, 49, 90);
+  border: 3px solid;
+  border-image:linear-gradient(90deg,rgb(63, 4, 226),rgb(0, 225, 255),rgb(11, 75, 250) 100% )1;
 }
+ 
+
 .PaginaInicial{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+  display: grid;
+  grid-auto-rows: auto;
+  grid-template-columns:2fr 2fr 2fr;
+  row-gap: 40px;
+  column-gap: 40px;
+  background-color:rgb(255, 255, 255);
+   border: double red;
+   justify-items: center;
+   padding: 50px 50px 50px 50px;
+
 }
 .container-img{
   display: flex;
-  
+  background-color:rgb(255, 255, 255);
 }
 .icon{
-  width: 100px;
-  border-radius: 50%;
+  width:200px;
+  border-radius: 40px;
+  background-color:rgb(255, 255, 255);
+  padding-bottom: 10%;
+  
+}
+
+.text_icon{
+  text-shadow: 1px 1px 1px rgb(110, 109, 109);
+  font-family: Arial, Helvetica, sans-serif;
+
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  text-align: center;
 }
 .container-flex{
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+  align-items: center;
+  padding: 15px 15px 15px;
+  background-color: rgb(255, 255, 255);
+}
+
+
+.container-btn-flex{
+  background-color: white;
+}
+.container-btn-flex:hover{
+background-color: white;
+border: 2px solid;
+  border-image:linear-gradient(90deg,rgb(63, 4, 226),rgb(0, 225, 255),rgb(11, 75, 250) 100% )1;
+}
+
+.modal-hide{
+  display: none;
   
-  border: black double;
+}
+.modal-content{
+  display: flex;
+  height: 100%;
+  justify-content: center;
+
+}
+.display_container{
+  text-align: center;
+  width: 60%;
+  height: max-content;
+  border: double;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+.container-close{
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  text-align: right;
+  font-size: 150%;
+padding: 0px 16px 0px 16px;
+color: rgb(0, 0, 0);
+margin: 5% 16px 16px 80%;
+border: none;
+background-color: white;
+}
+.list_materias{
+  display: grid;
+  grid-auto-rows: auto;
+  grid-template-columns:3fr 3fr 2fr;
+  row-gap: 40px;
+  column-gap: 40px;
+  background-color:rgb(255, 255, 255);
+
+   justify-items: center;
+   padding: 50px 0 50px;
+  margin: 20px;
+  width: 100%;
+  text-align: left;
+}
+.text_list{
+  font-size: 130%;
+  background-color: white;
+}
+table{
+  width: 100%;
+
+
+}
+.coluna1,.coluna2,.coluna3,tr>td{
+    width: 30%;
+    background-color: aquamarine;
+    text-align: center;
+    border: 1px solid;
+    border-image:linear-gradient(90deg,rgb(63, 4, 226),rgb(0, 225, 255),rgb(11, 75, 250) 100% )1;
+}
+
+
+.foto_perfil{
+  display: flex;
+  justify-content: flex-end;
+  width: 300px;
+  border: 5px  solid;
+  border-image:linear-gradient(90deg,rgb(63, 4, 226),rgb(0, 225, 255),rgb(11, 75, 250) 100% )1;
+  margin: 5% 0% 5% 12%;
+  
+}
+.container_perfil{
+  display: flex;
+  align-items: top;
+  width: 80%;
+ 
+}
+
+.text_perfil{
+  width:60%;
+  display: inline-block;
+  padding: 20px 10px 10px 0px;
+  margin: 10px 10px 10px 0px;
+color: white;
+}
+.divDaFoto{
+width: 30%;
+text-align: right;
+display: inline-block;
+}
+.container_geral{
+  display: block;
+  font-size: xx-large;
+}
+
+.redeContato{
+  width: 200px;
+  background-color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+
+.img_contato{
+  width: 100px;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  text-align: center;
+}
+.img_contato:hover{
+  width: 200px;
+}
+.display_contato{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+
+  background-color: white;
+}
+.classeA{
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
 }
