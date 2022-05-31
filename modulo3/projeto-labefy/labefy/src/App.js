@@ -1,13 +1,17 @@
-import logo from './logo.svg';
+
 import './App.css';
-import Index from "./components/index"
-import { CriarPlayList } from './components/criarPlayList';
+import Contador from "./components/contador.js"
+
 function App() {
   return (
     <div className="App">
-          <Index/>
-          <CriarPlayList/>
-     
+         
+           <div>
+          <Contador/>
+
+          on
+          </div>
+
     </div>
   );
 }
