@@ -1,0 +1,54 @@
+.{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+.fundo{
+    background-image: url("../imagens/fundo.jpg");
+    height: 100vh;
+    background-color: blue;
+}
+.titulo{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 40pt;
+}
+.div-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+
+}
+.btn{
+    width: 300px;
+    height: 100px;
+    border-radius: 8%;
+    background-color: transparent;
+    color: white;
+    margin: 20px;
+    font-size: 20pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn:hover{
+    background-color: rgb(71, 158, 240);
+    background-image: linear-gradient(to bottom, rgb(3, 12, 65), rgb(36, 51, 63), rgb(20, 2, 43));
+    color: black;
+    background-clip: text;
+    -webkit-background-clip: border-box;
+  
+    /* Adicionado: */
+    -webkit-text-fill-color: rgb(255, 249, 249) ;
+}
+.gradient {
+    background-image: linear-gradient(to bottom, rebeccapurple, steelblue, turquoise);
+    color: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+  
+    /* Adicionado: */
+    -webkit-text-fill-color: transparent;
+  }
+  
