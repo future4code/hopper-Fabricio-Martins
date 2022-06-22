@@ -4,14 +4,16 @@
     text-decoration: none;
 }
 .fundo{
+    margin: 0px;
     background-image: url("../imagens/fundo.jpg");
-    height: 100vh;
+    height: 100%;
     background-color: blue;
 }
 .titulo{
     text-align: center;
     color: rgb(255, 255, 255);
     font-size: 40pt;
+    padding: 0px;
 }
 .div-btn{
     display: flex;

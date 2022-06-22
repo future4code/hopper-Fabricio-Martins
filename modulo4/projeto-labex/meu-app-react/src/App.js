@@ -1,12 +1,15 @@
 
-import HomePage from "./componentes.js/HomePage";
+
+import React from "react";
+
+import Rotas from "./componentes.js/routes";
 
 
 function App() {
   return (
     <div >
       
-      <HomePage/>
+      <Rotas/>
 
     </div>
   );
