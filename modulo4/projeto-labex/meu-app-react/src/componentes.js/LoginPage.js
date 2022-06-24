@@ -1,55 +1,63 @@
 import React from "react";
-import {useNavigate} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useState } from "react";
-import axios, { Axios } from "axios";
+// import { axios } from "axios";
 
 
+const axios = require('axios').default;
 
 export default function LoginPage() {
-  const [email, setEmail] = useState("fabricio")
+  const navegar = useNavigate();
+  const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
 
-const onchangeEmail  = (event) =>{
-  setEmail( event.target.value)
-  console.log(email)
-}
-const onchangePassword  = (event) =>{
-  setPassword(event.target.value)
-  console.log(password)
-}
+  const onchangeEmail = (event) => {
+    setEmail(event.target.value)
 
-const entraLogin = ()=>{
-  const URL = "https://us-central1-labenu-apis.cloudfunctions.net/labeX/:aluno/login";
-  const body =
-   {
-    "email": "astrodev@gmail.com.br",
-    "password": "123456"
-  };
+  }
+  const onchangePassword = (event) => {
+    setPassword(event.target.value)
+
+  }
+
+  const entraLogin = () => {
+
+    console.log(email, password)
+    const URL = "https://us-central1-labenu-apis.cloudfunctions.net/labeX/FabricioSilva-turma-hopper/login";
+    const body =
+    {
+      email,
+      password
+    };
+
+
+
+    axios.post(URL, body).then((res) => {
+      if (res.success){
+        localStorage.setItem("token",res.token)
+        navegar("/trips/list")
+      }
+      console.log(res)
+    }).catch((err) => {
+      console.log(err.response)
+    })
+
+
+  }
+
+
+
   
-
-
-axios.post(URL , body).then((res)=>{
-  console.log(res)
-}).catch((err)=>{
-  console.log(err.response)
-})
-
-
-}
-
-
-
-    const navegar = useNavigate();
-    return (
+  return (
     <div>
       <h1>Login Adm</h1>
       <div>
-        <input type={"text"} placeholder ="Digite seu email:" value={email} onChange={onchangeEmail}/>
-        <input type={"text"} placeholder="Digite sua senha" value={password} onChange={onchangePassword}/>
+        <input type={"email"} placeholder="Digite seu email:" value={email} onChange={onchangeEmail} />
+        <input type={"password"} placeholder="Digite sua senha" value={password} onChange={onchangePassword} />
       </div>
       <div>
-        <button onClick={()=>navegar("/")}>Voltar</button>
-        <button onClick={()=>entraLogin("/trips/list")}>Entrar</button>
+        <button onClick={() => navegar("/")}>Voltar</button>
+        <button onClick={entraLogin}>Entrar</button>
       </div>
     </div>
   );
